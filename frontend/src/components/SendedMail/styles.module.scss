@@ -1,0 +1,22 @@
+.sendedMailWrapper {
+  display: none;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  img {
+    max-width: 200px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  a {
+    align-self: center;
+    text-decoration: none;
+    color: var(--primary);
+  }
+}

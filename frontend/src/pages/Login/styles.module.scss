@@ -1,0 +1,97 @@
+.loginWrapper {
+  display: flex;
+  height: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.loginContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+
+  small {
+    color: red;
+  }
+
+  h3 {
+    color: rgb(130, 130, 130);
+    margin: 10px 0px 40px;
+    font-weight: 500;
+  }
+
+  input {
+    padding: 15px;
+    padding-left: 50px;
+    border-radius: 40px;
+    border: 1px solid rgb(130, 130, 130);
+    margin-bottom: 12px;
+    transition: 0.3s;
+    font-size: 1.1rem;
+  }
+
+  input:first-of-type {
+    background: url('../../assets/mail.png') no-repeat scroll 20px 50%;
+  }
+
+  input:last-of-type {
+    background: url('../../assets/padlock.png') no-repeat scroll 20px 50%;
+  }
+
+  input:focus {
+    border: 1px solid var(--input-hover);
+  }
+
+  span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+
+    button {
+      padding: 15px 60px;
+      border-radius: 40px;
+      border: none;
+      background-color: var(--primary);
+      color: #FFF;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      filter: brightness(105%);
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(130, 130, 130);
+      margin-left: 20px;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .loginContent {
+    flex-direction: column;
+  }
+
+}

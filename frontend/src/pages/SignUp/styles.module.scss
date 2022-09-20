@@ -1,0 +1,98 @@
+.signUpWrapper {
+  display: flex;
+  height: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.signUpContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+
+      small {
+        font-size: 1rem;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none
+      }
+    }
+
+    input {
+      padding: 15px;
+      padding-left: 50px;
+      border-radius: 40px;
+      border: 1px solid rgb(130, 130, 130);
+      margin-bottom: 12px;
+      transition: 0.3s;
+      font-size: 1.1rem;
+    }
+
+    input:first-of-type {
+      background: url('../../assets/account.png') no-repeat scroll 20px 50%;
+    }
+
+    input:nth-child(3) {
+      background: url('../../assets/mail.png') no-repeat scroll 20px 50%;
+    }
+
+    input:nth-child(n+4) {
+      background: url('../../assets/padlock.png') no-repeat scroll 20px 50%;
+    }
+
+    input:focus {
+      border: 1px solid var(--input-hover);
+    }
+
+    span {
+      margin: 20px 0px;
+      display: flex;
+
+      input {
+        width: 18px;
+        height: 18px;
+      }
+
+      label {
+        margin-left: 10px;
+      }
+    }
+
+    small {
+      color: red;
+    }
+
+    button {
+      padding: 15px 60px;
+      border-radius: 40px;
+      border: none;
+      background-color: var(--primary);
+      color: #FFF;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      filter: brightness(105%);
+    }
+
+  }
+}

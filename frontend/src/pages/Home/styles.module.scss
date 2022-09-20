@@ -1,0 +1,24 @@
+.homeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  button {
+    margin-top: 20px;
+    padding: 15px 60px;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--primary);
+    color: #FFF;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    filter: brightness(105%);
+  }
+
+}
