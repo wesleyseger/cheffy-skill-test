@@ -1,6 +1,6 @@
-import logo from '../../assets/logo.png';
-
 import styles from './styles.module.scss';
+
+import logo from '../../assets/logo.png';
 
 export function Navbar({ signUp }) {
   return (

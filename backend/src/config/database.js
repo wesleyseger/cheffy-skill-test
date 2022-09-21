@@ -1,10 +1,10 @@
 import mysql from 'mysql2/promise';
 
 const database = {
-  host: 'localhost',
-  user: 'root',
-  password: null,
-  database: 'skilltest'
+  host: process.env.DBHOST,
+  user: process.env.DBUSER,
+  password: process.env.PASS,
+  database: process.env.DBNAME
 }
 
 async function connect() {

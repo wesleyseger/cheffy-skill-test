@@ -1,11 +1,13 @@
 
 import { useEffect, useState } from "react";
-import { Navbar } from "../../components/Navbar";
+import { useNavigate, useParams } from "react-router-dom";
 import styles from './styles.module.scss';
 
-import { validateResetPassword } from "../../utils/yup";
-import { useNavigate, useParams } from "react-router-dom";
 import api from "../../services/api";
+
+import { Navbar } from "../../components/Navbar";
+
+import { validateResetPassword } from "../../utils/yup";
 
 import { notify } from "../../components/Toast";
 import animate from "../../utils/animate";

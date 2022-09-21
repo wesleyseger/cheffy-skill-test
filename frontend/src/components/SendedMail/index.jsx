@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
-import sendMail from '../../assets/sendmail.webp';
+import styles from './styles.module.scss';
+
 import animate from '../../utils/animate';
 
-import styles from './styles.module.scss';
+import sendMail from '../../assets/sendmail.webp';
 
 export function SendedMail({ email }) {
 

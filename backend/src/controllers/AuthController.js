@@ -43,8 +43,7 @@ const signUp = async (req, res) => {
     if (password !== confirmPassword) {
       res.status(400).send({ success: false, error: `Confirm password didn't match` });
     }
-
-    if (!name || !username || !password || !confirmPassword) {
+    else if (!name || !username || !password || !confirmPassword) {
       res.status(400).send({ success: false, error: `Fill all fields to create account` });
     }
     else {
@@ -57,6 +56,7 @@ const signUp = async (req, res) => {
   catch (err) {
     if (err.code === 'ER_DUP_ENTRY')
       res.status(400).send({ success: false, error: 'User already exists' })
+    else res.send(err);
   }
 }
 

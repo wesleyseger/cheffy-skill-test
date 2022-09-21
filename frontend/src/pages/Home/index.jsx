@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import styles from './styles.module.scss';
 import { useNavigate } from 'react-router-dom';
+import styles from './styles.module.scss';
 
 export function Home() {
   const [user, setUser] = useState({});

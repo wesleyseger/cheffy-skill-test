@@ -1,19 +1,24 @@
 import nodemailer from 'nodemailer';
 
 const sendEmail = async (email, subject, text) => {
+  console.log(process.env.HOST);
+  console.log(process.env.USERNAME);
+  console.log(process.env.PASS);
+  console.log(process.env.SENDER);
+
   try {
     const transporter = nodemailer.createTransport({
       host: process.env.HOST,
       port: 465,
       secure: true,
       auth: {
-        user: process.env.USER,
+        user: process.env.USERNAME,
         pass: process.env.PASS,
-      },
+      }
     });
 
     let info = await transporter.sendMail({
-      from: `${process.env.SENDER} < ${process.env.USER} >`,
+      from: `${process.env.SENDER} < ${process.env.USERNAME} >`,
       to: email,
       subject: subject,
       text: text,

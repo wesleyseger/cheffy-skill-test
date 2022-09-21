@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import styles from './styles.module.scss';
-
 import { useNavigate } from 'react-router-dom';
+import styles from './styles.module.scss';
 
 import api from '../../services/api';
 
 import { Navbar } from '../../components/Navbar';
 
-import humans from '../../assets/humans.png';
 import animate from '../../utils/animate';
+
+import humans from '../../assets/humans.png';
 
 export function Login() {
   const navigate = useNavigate()

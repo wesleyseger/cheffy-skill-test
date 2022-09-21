@@ -1,23 +1,23 @@
-
 import { useEffect, useState } from "react";
+import styles from './styles.module.scss';
+
 import { Navbar } from "../../components/Navbar";
 import { SendedMail } from "../../components/SendedMail";
 
-import api from '../../services/api'
-
 import { notify } from "../../components/Toast";
+import animate from "../../utils/animate";
+
+import api from '../../services/api'
 
 import { validateForgetPassword } from "../../utils/yup";
 
-import styles from './styles.module.scss';
-import animate from "../../utils/animate";
 
 export function ForgetPassword() {
   const [email, setEmail] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
 
 
-  useEffect(()=>{
+  useEffect(() => {
     animate('fade-in-top', [styles.forgetPasswordContent])
   }, [])
 
