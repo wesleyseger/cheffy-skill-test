@@ -2,7 +2,7 @@
 
 JWT frontend and backend example.
 - Sign In
-- SignUp
+- Sign Up
 - Reset Password
 - JWT Token Authentication
 
