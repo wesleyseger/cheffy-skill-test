@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "npx nodemon src/CheffyServer.js"
+    "dev": "npx nodemon src/AuthServer.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
